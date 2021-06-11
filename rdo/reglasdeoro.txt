@@ -1,0 +1,108 @@
+				
+						REGLAS DE ORO!
+
+0.- Hablar lo que leemos, al menos un poco, tratar de relacionar el ejercicio de hablar con el de escucharnos.
+1.- Repetir los que aprendes (hacer un repaso después de 24hs, después de una semana, después de un mes).
+2.- Hacer ejercicio (cuatro horas después del estudio, si es posible).
+3.- Dormir bien (8 horas).
+4.- Relacionar lo que quieres memorizar con otras cosas.
+5.- Hacer examenes de practica libre (hacer el ejercicio de intentar resolver cosas sin ver las notas).
+6.- Nunca parar de aprender.
+7.- Enseñar a otros lo que aprendes.
+
+
+- Redondea "num" al entero más próximo y devuélvelo: var redondearNumero = Math.round(num);
+
+- Redondea "num" hacia arriba (al próximo entero) y devuélvelo: var redondearHaciaArriba = Math.ceil(num);
+
+- Generar un número al azar entre 0 y 1 y devolverlo: return Math.random();
+
+- DO WHILE: es importante saber que necesitamos al menos una variable que nos de la cantidad de veces que queremos repetir un proceso
+con do while, que sume por la cantidad de veces en el do, y las repita en el while las veces que queramos. ex:
+  var numero = 0;
+  var repeat = 0;
+  do{
+    repeat = repeat + 1; //simplemente ejecutamos un do que hará lo que tenemos estipulado al menos una vez.
+    numero = numero + 5; //damos las fórmulas con las cuales actuará el while, a menos que no se repita nada.
+  }
+  while(repeat < 8){ // con esto le decimos que se ejecute el do ka cantidad de veces que precisamos.
+    return numero;
+  }
+
+----------------CICLOS FOR--------------------
+
+- Ciclo FOR: el ciclo for tiene una sintaxis de por si muy reconocible que nos puede ayudar mucho
+a la hora de hacer ciertos cálculos, y es:
+
+for(var i = 0; i < max; i++){} //la lógica es que declaramos una variable "contador" en cero (si eso deseamos)
+y después una especie de pequeño if (que también puede variar) para pasar después al signo de
+agregación (que bien puede ser i++ || i+= n || i-- etc...)
+
+- Ciclo FOR invertido: Nos sirve para recoger un arreglo o string desde el final del mismo hasta el principio:
+for(i = n.length -1; i >= 0; i--){} // la lógica es que recorremos la longitud desde el -1(recordemos que esto
+significa que va a empezar desde el último valor del arerglo) y de ahí declara una condición que dicta:
+"si el índice (i) es mayor o igual a cero en este arreglo, réstale 1 a i"
+
+Esto nos da muchas facilidades para tomar toda la info del array que necesitamos debido a que
+seteamos una variable "i"=índice que recorre toda el array para poder hacer cálculos sobre ella.
+
+- NOTA IMPORTANTE: Debemos ser lógicos con el orden para no volver todo un proceso tan complejo
+en el ejercicio de multi de argumentos, podría haber empezado por el if de la condición y así
+no me partía la cabeza en buscar meterlo en el ciclo for de manera forzada.
+resumen: HAZ LO FÁCIL DE RESOLVER PRIMERO, DESPUÉS HAS LO COMPLEJOS... Y RECUERDA LA SINTAX DEL CICLO
+FOR!!!
+
+-----------------------------------------------
+
+SALVAR COSAS EN GIT: 
+Git status para ver la archivos que modificaste 
+Git add . Para agregarlos 
+Git commit -m 'comentario' 
+Git push para subirlo
+
+----------------------------------------
+
+	TABLA DE LA VERDAD:
+
+A	B	AND
+1	1	1
+1	0	0
+0	0	0
+0	1	0
+A	B	OR
+1	1	1
+1	0	1
+0	0	0
+0	1	1
+A	B	XOR
+1	1	0
+1	0	1
+0	0	0
+0	1	1
+A	NOT
+1	0
+0	1
+
+- SCOPE: Cuando hacemos referencia a una variable JS va a empezar buscando su definición en el ENTORNO más cercano, y seguiré buscando en entornos cada vez más
+lejanos hasta que encuentre un entorno donde la variable esté declarada, esto se llama SCOPE.
+
+- CLOSURE: Es cuando un función que retorna una función que recuerda las variables de su padre, en este caso la función de "arriba" guardaría las variables.
+
+- BIND: Retorna una función, el primer parámetro de bind es THIS.
+
+- CALL: Es lo mismo que BIND pero no es necesario llamar una variable ya que no crea una nueva función a partir de su llamada.
+
+- APPLY: Es lo mismo que un CALL, sólo que el segundo argumento es un arreglo.
+
+- RECURSIVIDAD: necesitamos buscar un caso base para que no hayan loops infinitos.
+
+-------------------------------------------------------------------------------
+
+- LISTAS ENLAZADAS: Es como un tren
+
+módulo = 100 % 35 buckets
+charCodeAt()
+
+para remove, current.next.next
+
+-------------------------------------------------------------------------------
